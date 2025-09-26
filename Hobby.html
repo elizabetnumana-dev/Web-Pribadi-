@@ -1,0 +1,85 @@
+<!-- HOBBY SECTION -->
+<section id="hobby" class="hobby-section">
+  <div class="container">
+    <h2>My Hobbies</h2>
+    <p>Beberapa aktivitas favorit saya di waktu luang:</p>
+
+    <div class="hobby-grid">
+      <div class="hobby-card">
+        <img src="reading.webp" alt="Reading">
+        <h3>Reading</h3>
+        <p>Membaca buku untuk menambah wawasan dan inspirasi baru.</p>
+      </div>
+
+      <div class="hobby-card">
+        <img src="writing.webp" alt="Writing">
+        <h3>Writing</h3>
+        <p>Cerita, catatan, atau karya ilmiah untuk melatih expresion thingking</p>
+        
+      </div>
+
+      <div class="hobby-card">
+        <img src="sports.webp" alt="Sport">
+        <h3>Sport</h3>
+        <p>Berolahraga untuk menjaga kesehatan dan kebugaran (silat)</p>
+      </div>
+
+      <div class="hobby-card">
+        <img src="cooking.webp" alt="Cooking">
+        <h3>Cooking</h3>
+        <p>Memasak berbagai resep untuk bersantai dan bereksperimen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+    .hobby-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #e6edf1, #00daf7);
+  text-align: center;
+}
+
+.hobby-section h2 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+.hobby-section p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.hobby-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.hobby-card:hover {
+  transform: translateY(-8px);
+}
+
+.hobby-card img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.hobby-card h3 {
+  color: #1975df;
+  margin-bottom: 10px;
+}
+
+</style>
+
