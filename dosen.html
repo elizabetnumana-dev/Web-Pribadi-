@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FMIPA UNHAS - Dosen & Staf</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#02244a;
+  color:white;
+}
+
+/* HEADER */
+header{
+  background:#063970;
+  padding:12px 20px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.navbar{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 12px;
+  font-weight:bold;
+}
+nav a:hover{
+  color:#ffd700;
+}
+
+/* MAIN SECTION */
+.section{
+  max-width:1100px;
+  margin:40px auto;
+  background:#063970;
+  padding:25px;
+  border-radius:12px;
+}
+.section h2{
+  color:#ffd700;
+  margin-bottom:15px;
+}
+
+/* ===== STAF VERTIKAL BARU (Dari kamu) ===== */
+.dosen-card{
+  background:#02244a;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:20px;
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+.dosen-card img{
+  width:110px;
+  height:110px;
+  border-radius:10px;
+  object-fit:cover;
+}
+.dosen-card h3{
+  margin:0;
+  font-size:20px;
+  color:#ffd700;
+}
+.dosen-card p{
+  margin:4px 0;
+}
+
+/* ================= DOSEN HORIZONTAL SCROLL ================= */
+.dosen-scroll{
+  margin-top:15px;
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+  padding-bottom:10px;
+}
+.dosen-scroll::-webkit-scrollbar{
+  height:8px;
+}
+.dosen-scroll::-webkit-scrollbar-thumb{
+  background:#ffd700;
+  border-radius:10px;
+}
+
+.dosen-box{
+  min-width:220px;
+  background:#02244a;
+  padding:10px;
+  border-radius:10px;
+  flex-shrink:0;
+  text-align:center;
+}
+.dosen-box img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+}
+.dosen-box h4{
+  margin:10px 0 0;
+  color:#ffd700;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <h2>FMIPA Universitas Hasanuddin</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="berita.html">Berita</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="mahasiswa.html">Mahasiswa</a>
+      <a href="dosen.html" style="color:#ffd700;">Dosen</a>
+      <a href="lab.html">Laboratorium</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================================================== -->
+<!-- ==================== 1. STAF ========================= -->
+<!-- ===================================================== -->
+
+<section class="section">
+  <h2>Staf Departemen Fisika</h2>
+
+  <div class="dosen-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <div>
+      <h3>Haerana, S.Adm</h3>
+      <p><b>Jabatan:</b> Administrasi Departemen</p>
+      <p><b>Email:</b> rahmawati@unhas.ac.id</p>
+    </div>
+  </div>
+
+  <div class="dosen-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png">
+    <div>
+      <h3>Syukur Polanu, S.T</h3>
+      <p><b>Jabatan:</b> Staff Tata Usaha</p>
+      <p><b>Email:</b> syukurpolanu@unhas.ac.id</p>
+    </div>
+  </div>
+
+  <div class="dosen-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png">
+    <div>
+      <h3>Siti Aminah</h3>
+      <p><b>Jabatan:</b> Staff Layanan Akademik</p>
+      <p><b>Email:</b> aminah@unhas.ac.id</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- ==================== 2.TEORI DAN KOMPUTASI=================== -->
+<!-- ===================================================== -->
+
+<section class="section">
+  <h2>Dosen Teori & Komputasi</h2>
+
+  <div class="dosen-scroll">
+    <div class="dosen-box"><img src="mr.wira.png"><h4>Prof.Dr. rer-nat Wira Bahari Nurdin</h4></div>
+    <div class="dosen-box"><img src="mr.tasrief.png"><h4>Prof.Dr.Tasrief Tsurungan, M.Sc </h4></div>
+    <div class="dosen-box"><img src="mr bayu.png"><h4>Bayu Dirgantara, SST., Ph.D</h4></div>
+    <div class="dosen-box"><img src="mr.azwar (2).jpeg"><h4>Dr.Azwar Sutiono, M.Si</h4></div>
+    <div class="dosen-box"><img src="https://picsum.photos/300/200?15"><h4>Drs.Bangsawan BJ., M.Si</h4></div>
+    <div class="dosen-box"><img src="https://picsum.photos/300/200?22"><h4> Eko Juarlin, S.Si, M.Si</h4></div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================== 4. FISIKA MATERIAL ================== -->
+<!-- ===================================================== -->
+
+<section class="section">
+  <h2>Dosen Fisika Material & Energi</h2>
+
+  <div class="dosen-scroll">
+    <div class="dosen-box"><img src="mr.bualkar.jpeg"><h4>Prof.Dr.Bualkar Abdullah, M.Eng.Sc </h4></div>
+    <div class="dosen-box"><img src="ms lela.jpeg"><h4>Prof.Dr.Nurlaela Rauf,M.Sc </h4></div>
+    <div class="dosen-box"><img src="ms sri.jpeg"><h4>Prof.Dr.Sri Suryani, DEA</h4></div>
+    <div class="dosen-box"><img src="mr.tanto.jpeg"><h4>Heryanto,S.Si, M.Si</h4></div>
+    <div class="dosen-box"><img src="mr.paulus.png"><h4>Prof.Dr.Paulus Lobo Gasero, M.Sc </h4></div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- ==================== 3. OPTIK DAN SPEKTROSKOPI =================== -->
+<!-- ===================================================== -->
+
+<section class="section">
+  <h2>Dosen Optik & Spektroskopi </h2>
+
+  <div class="dosen-scroll">
+    <div class="dosen-box"><img src="ms.tuty.jpeg"><h4>Dr.Sri Dewi Astuty.S.Si, M.Si </h4></div>
+    <div class="dosen-box"><img src="ms ayu.jpeg"><h4>Ayu Hardianti Pratiwi,S.Pd.,M.Si</h4></div>
+    <div class="dosen-box"><img src="ms ajeng.jpeg"><h4>Ajeng Anggreny Ibrahim,S.Pd.,M.Si</h4></div>
+     <div class="dosen-box"><img src="mr.banu.png"><h4>Bannu, S.Si, M.Si - </h4></div>
+    <div class="dosen-box"><img src="https://picsum.photos/300/200?21"><h4>Prof.Dr.Syamsir D.,D.,MS </h4></div>
+    <div class="dosen-box"><img src="https://picsum.photos/300/200?22"><h4>Prof.Dr.Dahlang Tahir,M.Si </h4></div>
+    <div class="dosen-box"><img src="https://picsum.photos/300/200?24"><h4>Arfinna, S.Si,M.Si,F.Med-Optik</h4></div>
+   
+  </div>
+</section>
+
+
+<!-- ===================================================== -->
+<!-- ===================== 5.ELEKTRONIKA FISIS DAN INSTRUMENTASI =================== -->
+<!-- ===================================================== -->
+
+<section class="section">
+  <h2>Dosen Elektronka & Instrumentasi </h2>
+
+  <div class="dosen-scroll">
+    <div class="dosen-box"><img src="pa arifin.jpeg"><h4>Prof.Arifin,M.T</h4></div>
+    <div class="dosen-box"><img src="ms.yaya.jpeg"><h4>Dr.Bidayatul Armiyah, M.T </h4></div>
+    <div class="dosen-box"><img src="ms.ida.jpeg"><h4> Ida Laila, S.Si, M.Si </h4></div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- ======================= FOOTER ======================= -->
+<!-- ===================================================== -->
+
+<footer style="
+  background:#02244a;
+  color:white;
+  padding:50px 0 25px;
+  margin-top:60px;
+">
+
+  <div style="
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap:35px;
+    padding:0 25px;
+  ">
+
+    <div>
+      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">
+        FMIPA UNIVERSITAS HASANUDDIN
+      </h3>
+
+      <p>Gedung Fakultas MIPA, Universitas Hasanuddin</p>
+      <p>Jl. Perintis Kemerdekaan KM 10 Tamalanrea, Makassar</p>
+      <p>Kode Pos 90245 | Telp (0411) 586-200</p>
+
+      <div style="margin-top:14px;display:flex;flex-direction:column;gap:10px;">
+        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">📸 Instagram</a>
+        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">▶️ YouTube</a>
+        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">✉️ Email</a>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">Link Penting</h3>
+      <ul style="list-style:none;padding:0;">
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Universitas Hasanuddin</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">FMIPA</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Prodi Fisika</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Laboratorium FTK</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">Layanan</h3>
+      <ul style="list-style:none;padding:0;">
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Akademik</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Jurnal Ilmiah</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Tracer Study</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">E-Learning</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="
+    text-align:center;
+    margin-top:30px;
+    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,0.25);
+    font-size:14px;
+    color:#dbe7f7;
+  ">
+    © 2025 FMIPA Universitas Hasanuddin | All Rights Reserved
+  </div>
+
+</footer>
+
+</body>
+</html>

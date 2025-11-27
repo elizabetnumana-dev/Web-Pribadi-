@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FMIPA UNHAS - Laboratorium</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#02244a;
+  color:white;
+  scroll-behavior:smooth;
+}
+
+header{
+  background:#063970;
+  padding:12px 20px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.navbar{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 12px;
+  font-weight:bold;
+}
+nav a:hover{color:#ffd700;}
+
+/* ===== LAB SECTION ===== */
+.lab-section{
+  max-width:1000px;
+  margin:40px auto;
+  padding:20px;
+  background:#02244a;
+  border-radius:10px;
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 1s ease;
+}
+.lab-section.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+.lab-section h2{
+  color:#ffd700;
+  margin-bottom:15px;
+}
+.lab-section img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+/* ===== SUB-KOTAK HORIZONTAL ===== */
+.sub-scroll{
+  margin-top:18px;
+  padding-bottom:10px;
+  display:flex;
+  gap:18px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+}
+.sub-scroll::-webkit-scrollbar{
+  height:8px;
+}
+.sub-scroll::-webkit-scrollbar-thumb{
+  background:#ffd700;
+  border-radius:10px;
+}
+
+.sub-box{
+  min-width:230px;
+  max-width:230px;
+  background:#063970;
+  padding:10px;
+  border-radius:10px;
+  flex-shrink:0;
+  text-align:center;
+  transition:0.3s;
+}
+.sub-box:hover{
+  transform:scale(1.06);
+}
+
+.sub-box img{
+  width:100%;
+  height:130px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.sub-box h4{
+  margin:10px 0 0;
+  color:#ffd700;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <h2 style="font-weight:800;">FMIPA Universitas Hasanuddin</h2>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="berita.html">Berita</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="mahasiswa.html">Mahasiswa</a>
+      <a href="dosen.html">Dosen</a>
+      <a href="lab.html" style="color:#ffd700;">Laboratorium</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================================================== -->
+<!-- ================= TEORI & KOMPUTASI ============= -->
+<!-- ===================================================== -->
+
+<section class="lab-section">
+  <h2>Lab Teori & Komputasi</h2>
+  <img src="komputasi.jpeg">
+
+  <p>
+    Lab ini memfasilitasi penelitian dan simulasi fisika teoritis serta komputasi ilmiah, mendukung pengembangan model dan algoritma modern.
+  </p>
+
+  <!-- ===== SUB KOTAK HORIZONTAL DI SINI ===== -->
+  <div class="sub-scroll">
+
+    <div class="sub-box">
+      <img src="fiskom.jpeg">
+      <h4>Komputasi</h4>
+    </div>
+
+    <div class="sub-box">
+      <img src="fiskum.jpeg">
+      <h4>Kuantum</h4>
+    </div>
+
+    <div class="sub-box">
+      <img src="astro.jpeg">
+      <h4>Astrofisika</h4>
+    </div>
+
+    <div class="sub-box">
+      <img src="partikel.jpeg">
+      <h4>Partikel</h4>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- ======================  ELEKTRONIKA & iNSTRUMENTASI ==================== -->
+<!-- ===================================================== -->
+
+<section class="lab-section">
+  <h2>Lab Elektronika & Instrumentasi</h2>
+  <img src="elektro.jpeg">
+  <p>Lab Elins fokus pada penelitian elektronika, sensor, instrumentasi, dan sistem otomatis modern.</p>
+
+
+ <!-- ===== SUB KOTAK HORIZONTAL DI SINI ===== -->
+     <div class="sub-scroll">
+
+    <div class="sub-box">
+      <img src="IOT..jpeg">
+      <h4>Iinternet Of Things</h4>
+    </div>
+
+    <div class="sub-box">
+       <img src="semi.jpeg">
+      <h4>Semikonduktor</h4>
+    </div>
+
+    <div class="sub-box">
+       <img src="bioplas.jpeg">
+      <h4>Intrumentasi</h4>
+    </div>
+
+    <div class="sub-box">
+      <img src="superka.jpeg">
+      <h4>Superkapasitor</h4>
+    </div>
+
+  </div>
+  </section>
+
+<!-- ===================================================== -->
+<!-- ====================== OPTIK & SPEKTROSKOPI ==================== -->
+<!-- ===================================================== -->
+
+<section class="lab-section">
+  <h2>Lab Optik & Spektroskopi</h2>
+  <img src="medik.jpeg">
+  <p>Lab Medik mendukung riset bioteknologi, kesehatan, dan pemodelan biomolekuler.</p>
+
+
+ <!-- ===== SUB KOTAK HORIZONTAL DI SINI ===== -->
+  <div class="sub-scroll">
+
+    <div class="sub-box">
+      <img src="RDI.jpeg">
+      <h4>Radiodiagnostik</h4>
+    </div>
+
+    <div class="sub-box">
+      <img src="RT.jpeg">
+      <h4>Radioterapi</h4>
+    </div>
+
+    <div class="sub-box">
+      <img src="KN.jpeg">
+      <h4>Kedokteran Nuklir</h4>
+    </div>
+
+    <div class="sub-box">
+      <img src="KN.jpeg">
+      <h4>Laser Spektroskopi</h4>
+    </div>
+
+  </div>
+  <section/>
+
+<!-- ===================================================== -->
+<!-- ==================== FISIKA MATERIAL =================== -->
+<!-- ===================================================== -->
+
+<section class="lab-section">
+  <h2>Lab Material & Energi</h2>
+  <img src="material.jpeg">
+  <p>Lab Material meneliti sifat material, nanoteknologi, dan pengembangan material inovatif.</p>
+
+    <!-- ===== SUB KOTAK HORIZONTAL DI SINI ===== -->
+  <div class="sub-scroll">
+
+    <div class="sub-box">
+      <img src="Instru.jpeg">
+      <h4>Bioplastik</h4>
+    </div>
+
+    <div class="sub-box">
+      <img src="ftokatalis.jpeg">
+      <h4>Material Fotokatalis</h4>
+    </div>
+    
+
+    <div class="sub-box">
+      <img src="komposit.jpeg">
+      <h4>Material Komposit</h4>
+    </div>
+
+    <div class="sub-box">
+      <img src="terdoping.jpeg">
+      <h4>Material Terdoping</h4>
+    </div>
+   
+  </div>
+</section>
+
+<script>
+// ANIMASI MUNCUL SAAT SCROLL
+const labs = document.querySelectorAll('.lab-section');
+window.addEventListener('scroll', ()=>{
+  labs.forEach(section=>{
+    const pos = section.getBoundingClientRect();
+    if(pos.top < window.innerHeight - 100){
+      section.classList.add('visible');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

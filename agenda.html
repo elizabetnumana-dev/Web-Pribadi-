@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda Prodi Fisika Universitas Hasanuddin</title>
+<style>
+  body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+  }
+  header.navbar{
+    background:#063970;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 20px;
+    position:sticky;
+    top:0;
+    z-index:100;
+  }
+  header.navbar h1.logo-text{margin:0;font-size:24px;}
+  header.navbar nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    font-weight:bold;
+  }
+  header.navbar nav a.active{color:#ffd700;}
+
+  /* ========= AGENDA ========= */
+  .agenda-section{
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+  }
+  .agenda-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:28px;
+    color:#063970;
+  }
+  .agenda-container {
+    display:flex;
+    overflow-x:auto;
+    gap:30px;
+    padding-bottom:20px;
+    justify-content:flex-start;
+  }
+  .agenda-card {
+    flex: 0 0 450px; /* Lebar diperbesar */
+    background:#02244a;
+    color:white;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+    transition: transform 0.3s;
+  }
+  .agenda-card:hover {transform: scale(1.05);}
+  .agenda-card img {
+    width:100%;
+    height:300px; /* Tinggi diperbesar */
+    object-fit:cover;
+    display:block;
+    margin:auto;
+  }
+  .agenda-card p{
+    padding:15px;
+    font-size:16px;
+    line-height:1.5;
+  }
+
+  /* ========= FOOTER BARU ========= */
+  .footer{
+    background:#102542; color:#fff; padding:40px 20px 10px;margin-top:60px;
+  }
+  .footer-container{
+    display:flex; flex-wrap:wrap; gap:30px; justify-content:space-between;
+    max-width:1200px; margin:auto;
+  }
+  .footer-section{ width:300px; }
+  .footer-section h3{margin-bottom:10px;font-size:18px;font-weight:700;}
+  .footer-section ul{list-style:none;padding:0}
+  .footer-section ul li{margin-bottom:6px}
+  .footer-section ul li a{color:#ddd;text-decoration:none;}
+  .footer-section ul li a:hover{color:#fff}
+
+  .social-icons{margin-top:15px;display:flex;gap:10px;flex-wrap:wrap;}
+  .icon-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:8px;color:#fff;font-weight:600;text-decoration:none;font-size:14px}
+  .icon-youtube{background:#ff0000}
+  .icon-instagram{background:#d6249f}
+  .icon-mail{background:#0077ff}
+  .icon-btn svg{width:18px;height:18px;fill:#fff}
+
+  .footer-bottom{text-align:center;margin-top:25px;font-size:14px;border-top:1px solid #345;padding-top:15px;}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo-text">FMIPA UNHAS - Agenda</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="berita.html">Berita</a>
+    <a href="agenda.html" class="active">Agenda</a>
+    <a href="mahasiswa.html">Mahasiswa</a>
+    <a href="dosen.html">Dosen</a>
+    <a href="lab.html">Laboratorium</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="agenda-section">
+  <h2>Agenda Departemen Fisika Univesritas Hasanuddin</h2>
+  <div class="agenda-container">
+    <div class="agenda-card">
+      <img src="seminar.jpeg" alt="Agenda 1">
+      <p><b>Workshop Komputasi Fisika</b><br>Pelatihan simulasi dan model komputasi untuk mahasiswa fisika. Tanggal: 15 Oktober 2025.</p>
+    </div>
+    <div class="agenda-card">
+      <img src="pbm.jpeg" alt="Agenda 2">
+      <p><b>Kolokium komputasi fisika </b><br>Proses pembelajaran komputasi untuk gabungan laboratorium . Tanggal: 20 Oktober 2025.</p>
+    </div>
+    <div class="agenda-card">
+      <img src="material.jpeg" alt="Agenda 3">
+      <p><b>Riset Material Baru</b><br>Pengenalan eksperimen material baru di laboratorium material FMIPA. Tanggal: 22 Oktober 2025.</p>
+    </div>
+    <div class="agenda-card">
+      <img src="elins.jpeg" alt="Agenda 4">
+      <p><b>Astrofisika dan Partikel</b><br>Seminar mengenai penelitian partikel dan fenomena astrofisika terkini. Tanggal: 23 Desember 2025.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========= FOOTER BIRU TUA ========== -->
+<footer style="
+  background:#02244a;
+  color:white;
+  padding:50px 0 25px;
+  margin-top:60px;
+">
+
+  <div style="
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap:35px;
+    padding:0 25px;
+  ">
+
+    <!-- KOLOM 1 -->
+    <div>
+      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">
+        FMIPA UNIVERSITAS HASANUDDIN
+      </h3>
+
+      <p>Gedung Fakultas MIPA, Universitas Hasanuddin</p>
+      <p>Jl. Perintis Kemerdekaan KM 10 Tamalanrea, Makassar</p>
+      <p>Kode Pos 90245 | Telp (0411) 586-200</p>
+
+      <div style="margin-top:14px;display:flex;flex-direction:column;gap:10px;">
+        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">
+          📸 Instagram
+        </a>
+        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">
+          ▶️ YouTube
+        </a>
+        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">
+          ✉️ Email
+        </a>
+      </div>
+    </div>
+
+    <!-- KOLOM 2 -->
+    <div>
+      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">Link Penting</h3>
+      <ul style="list-style:none;padding:0;">
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Universitas Hasanuddin</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">FMIPA</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Prodi Fisika</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Laboratorium FTK</a></li>
+      </ul>
+    </div>
+
+    <!-- KOLOM 3 -->
+    <div>
+      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">Layanan</h3>
+      <ul style="list-style:none;padding:0;">
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Akademik</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Jurnal Ilmiah</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Tracer Study</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">E-Learning</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="
+    text-align:center;
+    margin-top:30px;
+    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,0.25);
+    font-size:14px;
+    color:#dbe7f7;
+  ">
+    © 2025 FMIPA Universitas Hasanuddin | All Rights Reserved
+  </div>
+
+</footer>

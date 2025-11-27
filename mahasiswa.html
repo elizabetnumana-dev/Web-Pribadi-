@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mahasiswa FMIPA UNHAS</title>
+
+<style>
+/* ========= WARNA ========= */
+:root{
+  --navy:#063970;
+  --navy-dark:#02244a;
+  --card:#0b2b4a;
+  --white:#fff;
+  --muted:#f2f6fb;
+  --yellow:#ffd700;
+}
+
+/* ========= RESET ========= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+/* ========= HEADER ========= */
+header{
+  background:var(--navy);
+  padding:12px 20px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1200px;
+  margin:auto;
+}
+nav a{
+  color:#fff;
+  margin:0 12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a:hover,
+nav a.active{
+  color:var(--yellow);
+}
+
+/* ========= BODY ========= */
+body{
+  background:var(--muted);
+  color:var(--navy-dark);
+}
+main{
+  max-width:1200px;
+  margin:28px auto;
+  padding:0 16px;
+}
+
+/* ===== GRID MAHASISWA ===== */
+.students-section{margin-bottom:40px}
+.students-section h2{
+  text-align:center;
+  color:var(--navy);
+  margin-bottom:18px;
+  font-size:32px;
+  font-weight:800;
+}
+
+.students-grid{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap:18px;
+}
+
+.student-card{
+  background:var(--card);
+  color:var(--white);
+  border-radius:10px;
+  padding:14px;
+  text-align:center;
+  min-height:150px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 6px 18px rgba(2,20,40,0.12);
+  transition:.18s;
+}
+.student-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 28px rgba(2,20,40,0.18)
+}
+.student-card img{
+  width:86px;
+  height:86px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:10px;
+  border:3px solid rgba(255,255,255,.12);
+}
+
+.student-name{font-weight:700;margin-bottom:6px;font-size:17px}
+.student-meta{font-size:13px;opacity:.9}
+
+/* ===== ALUMNI ===== */
+.alumni-section{
+  margin-top:36px;
+  padding:18px;
+  background:linear-gradient(180deg,#fff, #f8fbff);
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(2,20,40,0.04)
+}
+.alumni-section h2{
+  color:var(--navy);
+  margin:6px 0 18px 6px;
+  font-weight:800
+}
+.alumni-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+}
+.alumni-card{
+  background:var(--white);
+  border-radius:10px;
+  padding:14px;
+  text-align:center;
+  box-shadow:0 8px 22px rgba(2,20,40,0.06);
+}
+.alumni-card img{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:6px auto 10px;
+}
+.alumni-name{font-weight:700;margin-bottom:6px;color:var(--navy-dark)}
+.alumni-thesis{
+  font-size:14px;
+  color:#333;
+  background:#f5f7fb;
+  padding:10px;
+  border-radius:8px;
+  margin-top:8px;
+  text-align:left;
+}
+
+/* RESPONSIVE */
+@media (max-width:1100px){ .students-grid{grid-template-columns:repeat(4,1fr)} }
+@media (max-width:900px){ .students-grid{grid-template-columns:repeat(3,1fr)} }
+@media (max-width:700px){ .students-grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:420px){
+  .students-grid{grid-template-columns:repeat(1,1fr)}
+  header{padding:10px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ========= HEADER ========= -->
+<header>
+  <div class="navbar">
+    <h2 style="color:white;font-weight:800;">FMIPA Universitas Hasanuddin</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="berita.html">Berita</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="mahasiswa.html" class="active">Mahasiswa</a>
+      <a href="dosen.html">Dosen</a>
+      <a href="lab.html">Laboratorium</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ========= MAHASISWA ========= -->
+  <section class="students-section">
+    <h2>Mahasiswa Angkatan 2023</h2>
+
+    <div class="students-grid">
+
+      <div class="student-card">
+        <img src="c:\Users\Hype GLK\Pictures\Formal Black.jpg">
+        <div class="student-name">Elizabet</div>
+        <div class="student-meta">H021231003 • Fisika Komputasi</div>
+      </div>
+
+      <div class="student-card">
+        <img src="https://picsum.photos/seed/elviana/200">
+        <div class="student-name">Elviana</div>
+        <div class="student-meta">H021231006 • Fisika Komputasi</div>
+      </div>
+
+      <div class="student-card">
+        <img src="https://picsum.photos/seed/deby/200">
+        <div class="student-name">Deby Lebriyawati</div>
+        <div class="student-meta">H021231046 • Astrofisika</div>
+      </div>
+
+      <div class="student-card">
+        <img src="https://picsum.photos/seed/angga/200">
+        <div class="student-name">Angga Anugrah</div>
+        <div class="student-meta">H021231024 • Astrofisika</div>
+      </div>
+
+      <div class="student-card">
+        <img src="https://picsum.photos/seed/nurfadli/200">
+        <div class="student-name">Nur Fadli Yoga</div>
+        <div class="student-meta">H021231073 • Astrofisika</div>
+      </div>
+
+      <div class="student-card">
+        <img src="https://picsum.photos/seed/santri/200">
+        <div class="student-name">Santri</div>
+        <div class="student-meta">H021231012 • Fisika Kuantum</div>
+      </div>
+
+      <div class="student-card">
+        <img src="https://picsum.photos/seed/citra/200">
+        <div class="student-name">Citra Fikriah Jamal</div>
+        <div class="student-meta">H021231010 • Fisika Kuantum</div>
+      </div>
+
+      <div class="student-card">
+        <img src="https://picsum.photos/seed/nurhaliza/200">
+        <div class="student-name">Nurhaliza</div>
+        <div class="student-meta">H021231008 • Fisika Kuantum</div>
+      </div>
+
+      <div class="student-card">
+        <img src="https://picsum.photos/seed/ibrahim/200">
+        <div class="student-name">Muhammad Ibrahim</div>
+        <div class="student-meta">H021231026 • Fisika Partikel</div>
+      </div>
+
+      <div class="student-card">
+        <img src="https://picsum.photos/seed/yeni/200">
+        <div class="student-name">Yeni Estefani Parinding</div>
+        <div class="student-meta">H021231016 • Fisika Partikel</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========= ALUMNI ========= -->
+  <section class="alumni-section">
+    <h2>Alumni & Hasil Skripsi</h2>
+
+    <div class="alumni-grid">
+
+      <div class="alumni-card">
+        <img src="https://picsum.photos/seed/rahmat/150">
+        <div class="alumni-name"> Andi Agung Parwira Negara_H021171510 (2023) </div>
+        <div class="alumni-thesis"><b>Judul:</b> Studi Laju Kehilangan Massa pada Evolusi Bintang Red Supergiant (RSG)</div>
+      </div>
+
+      <div class="alumni-card">
+        <img src="https://picsum.photos/seed/ahmad/150">
+        <div class="alumni-name">Musdalifah_H021191045 (2023)</div>
+        <div class="alumni-thesis"><b>Judul:</b> Studi Perubahan Sifat Struktur dan Termodinamik Pelipatan Protein Model HOP Menggunakan Simulasi Monte Carlo Algoritma Wang-Landau</div>
+      </div>
+
+      <div class="alumni-card">
+        <img src="https://picsum.photos/seed/siti/150">
+        <div class="alumni-name">Ayu Lestari_H021171313 (2022)  </div>
+        <div class="alumni-thesis"><b>Judul :</b> Klasifikasi Bintang RRLYRAE/CEPHED/MIRA Menggunakan Metode Naive Bayes</div>
+      </div>
+
+
+      <div class="alumni-card">
+        <img src="https://picsum.photos/seed/rina/150">
+        <div class="alumni-name">Safrullah_H021171021 (2022) </div>
+        <div class="alumni-thesis"><b>Judul :</b>Studi Perubahan Sifat Struktur dan Termodinamik Pelipatan Protein Model HP Menggunakan Simulasi Monte Carlo Algoritma Wang-Landau</div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ========= FOOTER BIRU TUA ========== -->
+<footer style="
+  background:#02244a;
+  color:white;
+  padding:50px 0 25px;
+  margin-top:60px;
+">
+
+  <div style="
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap:35px;
+    padding:0 25px;
+  ">
+
+    <!-- KOLOM 1 -->
+    <div>
+      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">
+        FMIPA UNIVERSITAS HASANUDDIN
+      </h3>
+
+      <p>Gedung Fakultas MIPA, Universitas Hasanuddin</p>
+      <p>Jl. Perintis Kemerdekaan KM 10 Tamalanrea, Makassar</p>
+      <p>Kode Pos 90245 | Telp (0411) 586-200</p>
+
+      <div style="margin-top:14px;display:flex;flex-direction:column;gap:10px;">
+        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">
+          📸 Instagram
+        </a>
+        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">
+          ▶️ YouTube
+        </a>
+        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">
+          ✉️ Email
+        </a>
+      </div>
+    </div>
+
+    <!-- KOLOM 2 -->
+    <div>
+      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">Link Penting</h3>
+      <ul style="list-style:none;padding:0;">
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Universitas Hasanuddin</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">FMIPA</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Prodi Fisika</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Laboratorium FTK</a></li>
+      </ul>
+    </div>
+
+    <!-- KOLOM 3 -->
+    <div>
+      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">Layanan</h3>
+      <ul style="list-style:none;padding:0;">
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Akademik</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Jurnal Ilmiah</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Tracer Study</a></li>
+        <li><a href="#" style="color:#dce6f5;text-decoration:none;">E-Learning</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="
+    text-align:center;
+    margin-top:30px;
+    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,0.25);
+    font-size:14px;
+    color:#dbe7f7;
+  ">
+    © 2025 FMIPA Universitas Hasanuddin | All Rights Reserved
+  </div>
+
+</footer>
+
+</body>
+</html>

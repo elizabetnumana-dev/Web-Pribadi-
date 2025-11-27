@@ -1,0 +1,94 @@
+/* ========= ROOT COLORS ========= */
+:root{
+  --blue:#063970;
+  --blue-dark:#02244a;
+  --yellow:#ffd700;
+  --white:#fff;
+}
+
+/* ========= RESET ========= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+  scroll-behavior:smooth;
+}
+
+/* ========= HEADER ========= */
+header{
+  background:var(--blue);
+  padding:12px 20px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1200px;
+  margin:auto;
+}
+nav a{
+  color:#fff;
+  margin:0 12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a:hover{color:var(--yellow);}
+
+/* ========= HERO ========= */
+.hero{
+  height:450px;
+  background:url("https://picsum.photos/1600/900?blur=2") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-shadow:2px 2px 5px #000;
+  color:white;
+}
+.hero h1{font-size:45px;font-weight:800;}
+.hero p{font-size:20px;margin-top:10px;}
+
+/* ========= SECTION ========= */
+.section{max-width:1200px;margin:40px auto;padding:20px;text-align:center;}
+.section h2{color:var(--blue);font-size:34px;margin-bottom:15px;font-weight:800;}
+
+/* ========= VISI ========= */
+.visi p{font-size:20px;color:#333;line-height:1.6;width:80%;margin:auto;}
+
+/* ========= MISI ========= */
+.misi-icons{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  margin-top:25px;
+  flex-wrap:wrap;
+}
+.icon-box{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  background:#faf2d4;
+  border:3px solid #eee;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;
+  transition:.3s;
+  cursor:pointer;
+}
+.icon-box:hover{
+  transform:translateY(-10px);
+  box-shadow:0 8px 18px rgba(0,0,0,.3);
+}
+
+/* ========= FOOTER ========= */
+footer{
+  background:#102542;
+  color:#fff;
+  padding:20px;
+  text-align:center;
+}
+
