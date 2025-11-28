@@ -1,308 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Hasanuddin</title>
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-:root{
-  --blue:#063970;
-  --blue-dark:#02244a;
-  --yellow:#ffd700;
-  --white:#e4edf3;
-}
-
-/* RESET */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,Helvetica,sans-serif;
-  scroll-behavior:smooth;
-}
-
-/* ✨ BACKGROUND GRADIENT BARU ✨ */
-body{
-  background:linear-gradient(150deg, #eef5ff, #b5c7e6, #7a9dcf, #02244a);
-  background-attachment: fixed;
-}
-
-/* HEADER */
-header{
-  background:var(--blue-dark);
-  padding:12px 20px;
-  position:sticky;top:0;z-index:100;
-  box-shadow:0 4px 12px rgba(0,0,0,0.3);
-}
-.navbar{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:auto}
-.nav-left{display:flex;align-items:center;gap:10px}
-.nav-left img{height:50px;}
-nav a{
-  color:#f0f4f7;margin:0 12px;text-decoration:none;font-weight:bold;
-}
-nav a:hover{color:var(--yellow)}
-
-/* HERO */
-.hero{
-  height:450px;
-  background:url("fmipa.png") center/cover no-repeat;
-  display:flex;justify-content:center;align-items:center;
-  text-shadow:2px 2px 5px #000;
-  color:white;
-}
-.hero h1{font-size:45px;font-weight:800}
-.hero p{font-size:20px;margin-top:10px}
-
-/* SECTION */
-.section{
-  max-width:1200px;
-  margin:40px auto;
-  padding:20px;
-  text-align:center;
-}
-.section h2{
-  color:var(--blue-dark);
-  font-size:34px;
-  margin-bottom:15px;
-  font-weight:800;
-}
-
-/* ========= Visi & Misi CARD VARIASI GLASS + SHADOW ========= */
-.box-container{
-  display:flex;
-  justify-content:space-between;
-  gap:25px;
-  margin-top:35px;
-  flex-wrap:wrap;
-}
-
-.box{
-  width:48%;
-  background:linear-gradient(135deg, #06408a, #02244a);
-  color:white;
-  padding:28px;
-  border-radius:18px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.35);
-  border:1px solid rgba(255,255,255,0.18);
-  transition:transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.box:hover{
-  transform:translateY(-10px);
-  box-shadow:0 14px 35px rgba(0,0,0,0.45);
-}
-
-.box h3{
-  font-size:26px;
-  color:white;
-  font-weight:800;
-  margin-bottom:15px;
-  text-shadow:1px 1px 3px rgba(0,0,0,0.3);
-}
-
-.box p, .box ul{
-  font-size:17px;
-  line-height:1.6;
-  color:#eaf3ff;
-}
-
-.box ul{padding-left:20px;}
-.box ul li{margin-bottom:10px;}
-
-@media(max-width:800px){
-  .box{width:100%;}
-}
-
-/* ========= DEPARTEMEN (TAMBAH SHADOW) ========= */
-.dep-grid{
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-  gap:20px;
-  margin-top:20px;
-}
-
-.dep-card{
-  height:180px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  background:linear-gradient(145deg, #063970, #022f5c);
-  color:#dce7f5;
-  font-weight:700;
-  border-radius:14px;
-  cursor:pointer;
-  box-shadow:0 8px 20px rgba(0,0,0,0.35);   /* shadow permanen */
-  transition:transform 0.35s, box-shadow 0.35s;
-}
-
-.dep-card i{
-  font-size:50px;
-  margin-bottom:10px;
-}
-.dep-card span{font-size:17px;}
-
-.dep-card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 12px 26px rgba(0,0,0,0.45);
-}
-
-/* Footer */
-.footer{
-  background:#02244a; 
-  color:white; 
-  padding:40px 20px 10px;
-  margin-top:60px;
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Fisika</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e0f7fa; /* biru muda */
+      display: flex;
+      min-height: 50vh;
+    }
+    /* Sidebar menu */
+    nav {
+      background: #b3e5fc; /* biru muda sidebar */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 200px;
+    }
+    nav a {
+      padding: 10px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #01579b; /* biru medium untuk teks */
+      background: #e1f5fe; /* biru muda pastel */
+      font-weight: bold;
+      text-align: center;
+      transition: 0.3s;
+      border: 1px solid #81d4fa;
+    }
+    nav a:hover {
+      background: #4fc3f7; /* biru lebih cerah saat hover */
+      color: white;
+    }
+    /* Konten utama */
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    .hero {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #b3e5fc, #4fc3f7); /* gradasi biru muda */
+      padding: 10px;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .hero h1 {
+      font-size: 20px;
+      margin-top: 20px;
+      color: #ffffff;
+    }
+    .hero p {
+      font-size: 10px;
+      color: #f0f8ff;
+      margin-top: 10px;
+    }
+  </style>
 </head>
-
 <body>
+  <!-- Sidebar dengan banyak tombol -->
+  <nav>
+    <a href="Labo.html">Laboratory</a>
+    <a href="Edu.html">Education</a>
+    <a href="cap.html">Capability</a>
+    <a href="Aw.html">Awarde</a>
+    <a href="Hobby.html">Hobby</a>
+    <a href="Motiv.html">Motivasi</a>
+    <a href="Organi.html">Organization</a>
+    <a href="Memo.html">Memory</a>
+  </nav>
 
-<!-- HEADER -->
-<header>
-  <div class="navbar">
-    <div class="nav-left">
-      <img src="Logo-Resmi-Unhas.png" alt="Logo UNHAS">
-      <h2 style="color:white;font-weight:800;">Universitas Hasanuddin</h2>
-    </div>
-    <nav>
-     <a href="index.html">Home</a>
-     <a href="berita.html">Berita</a>
-     <a href="agenda.html">Agenda</a>
-     <a href="mahasiswa.html">Mahasiswa</a>
-     <a href="dosen.html">Dosen</a>
-     <a href="lab.html">Laboratorium</a>
-     <a href="kontak.html">Kontak</a>
-    </nav>
-  </div>
-</header>
+  <!-- Konten utama -->
+  <main>
+    <section class="hero">
+      <!-- Gambar fisika yang kamu upload -->
+      <img src="Physics.2.jpg" alt="About Pysics">
+      <h1>Explore your Logic with physics.</h1>
+    </section>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div>
-    <h1>Selamat Datang di Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Hasanuddin</h1>
-    <p>Pusat pengembangan sains dan inovasi Indonesia</p>
-  </div>
-</section>
+    <section>
+      <h2>Konnichiwa, yōkoso!</h2>
+      <p>Ini adalah website Elizabet bertema fisika. Gunakan menu di samping kiri untuk menjelajahi berbagai halaman.</p>
+    </section>
+  </main>
+</body>
+</html>
 
-<!-- ========== VISI & MISI (BERDAMPINGAN) ========== -->
-<section class="section" id="visi-misi">
-  <h2>Visi &amp; Misi</h2>
-
-  <div class="box-container">
-
-    <div class="box">
-      <h3>Visi</h3>
-      <p>
-        Menjadi pusat unggulan dalam pengembangan sains dasar dan terapan berbasis Benua Maritim Indonesia (BMI) 
-        di tingkat nasional dan diakui di tingkat internasional pada tahun 2030.
-      </p>
-    </div>
-
-    <div class="box">
-      <h3>Misi</h3>
-      <ul>
-        <li>Meningkatkan kualitas pendidikan dan penelitian sains.</li>
-        <li>Memfasilitasi inovasi dan teknologi berbasis penelitian.</li>
-        <li>Berperan aktif dalam pembangunan maritim dan lingkungan.</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- DEPARTEMEN -->
-<section class="section" id="departemen">
-  <h2>Program Studi Sarjana, Magister, Doktor</h2>
-  <div class="dep-grid">
-    <div class="dep-card"><i class="fas fa-atom"></i><span>Fisika</span></div>
-    <div class="dep-card"><i class="fas fa-flask"></i><span>Kimia</span></div>
-    <div class="dep-card"><i class="fas fa-dna"></i><span>Biologi</span></div>
-    <div class="dep-card"><i class="fas fa-globe"></i><span>Geofisika</span></div>
-    <div class="dep-card"><i class="fas fa-chart-bar"></i><span>Statistika</span></div>
-    <div class="dep-card"><i class="fas fa-square-root-alt"></i><span>Matematika</span></div>
-  </div>
-</section>
-
-
-<!-- ========= FOOTER BIRU TUA ========== -->
-<footer style="
-  background:#02244a;
-  color:white;
-  padding:50px 0 25px;
-  margin-top:60px;
-">
-
-  <div style="
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-    gap:35px;
-    padding:0 25px;
-  ">
-
-    <!-- KOLOM 1 -->
-    <div>
-      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">
-        FMIPA UNIVERSITAS HASANUDDIN
-      </h3>
-
-      <p>Gedung Fakultas MIPA, Universitas Hasanuddin</p>
-      <p>Jl. Perintis Kemerdekaan KM 10 Tamalanrea, Makassar</p>
-      <p>Kode Pos 90245 | Telp (0411) 586-200</p>
-
-      <div style="margin-top:14px;display:flex;flex-direction:column;gap:10px;">
-        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">
-          📸 Instagram
-        </a>
-        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">
-          ▶️ YouTube
-        </a>
-        <a href="#" style="color:white;text-decoration:none;display:flex;align-items:center;gap:6px;">
-          ✉️ Email
-        </a>
-      </div>
-    </div>
-
-    <!-- KOLOM 2 -->
-    <div>
-      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">Link Penting</h3>
-      <ul style="list-style:none;padding:0;">
-        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Universitas Hasanuddin</a></li>
-        <li><a href="#" style="color:#dce6f5;text-decoration:none;">FMIPA</a></li>
-        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Prodi Fisika</a></li>
-        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Laboratorium FTK</a></li>
-      </ul>
-    </div>
-
-    <!-- KOLOM 3 -->
-    <div>
-      <h3 style="margin-bottom:14px;font-size:20px;font-weight:800;">Layanan</h3>
-      <ul style="list-style:none;padding:0;">
-        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Akademik</a></li>
-        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Jurnal Ilmiah</a></li>
-        <li><a href="#" style="color:#dce6f5;text-decoration:none;">Tracer Study</a></li>
-        <li><a href="#" style="color:#dce6f5;text-decoration:none;">E-Learning</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div style="
-    text-align:center;
-    margin-top:30px;
-    padding-top:15px;
-    border-top:1px solid rgba(255,255,255,0.25);
-    font-size:14px;
-    color:#dbe7f7;
-  ">
-    © 2025 FMIPA Universitas Hasanuddin | All Rights Reserved
-  </div>
-
-</footer>
