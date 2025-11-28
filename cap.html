@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capability Box</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #02d7f3;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  .capability-box {
+    background-color: #b2ebf2; /* biru muda */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 600px; /* diperbesar */
+  }
+
+  .capability-box h2 {
+    color: #006064;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  .accordion {
+    background-color: #b2ebf2;
+    color: #006064;
+    cursor: pointer;
+    padding: 18px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background 0.3s;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordion:hover {
+    background-color: #81d4fa;
+  }
+
+  .accordion:after {
+    content: '\25B6'; /* panah kanan */
+    font-size: 16px;
+    transition: transform 0.3s;
+  }
+
+  .accordion.active:after {
+    transform: rotate(90deg); /* panah menghadap bawah saat dibuka */
+  }
+
+  .panel {
+    padding: 0 20px;
+    background-color: #e0f7fa;
+    display: none;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  .panel ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0;
+  }
+
+  .panel li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+    color: #004d40;
+    font-size: 16px;
+  }
+
+  .panel li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #00796b;
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+
+<div class="capability-box">
+  <h2>Capability</h2>
+
+  <button class="accordion">Microsoft Office</button>
+  <div class="panel">
+    <ul>
+      <li>Microsoft Word (2017)</li>
+      <li>Microsoft PowerPoint (2017)</li>
+      <li>Microsoft Excel (2018)</li>
+    </ul>
+  </div>
+
+  <button class="accordion">Graphics Design</button>
+  <div class="panel">
+    <ul>
+      <li>Canva (2023–2025)</li>
+    </ul>
+  </div>
+
+  <button class="accordion">Numerical / Programming</button>
+  <div class="panel">
+    <ul>
+      <li>Python / Maple (2024–2025)</li>
+    </ul>
+  </div>
+
+  <button class="accordion">Operating System</button>
+  <div class="panel">
+    <ul>
+      <li>Linux (2025–2026)</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      panel.style.display = panel.style.display === "block" ? "none" : "block";
+    });
+  }
+</script>
+
+</body>
+</html>
+
